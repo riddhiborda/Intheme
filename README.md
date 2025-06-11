@@ -2,4 +2,4 @@
  ## 📱 App Screenshots
 
 ### 🔹 Home Screen
-![Home Screen](screen.png)
+![Home Screen](screen1.png)
