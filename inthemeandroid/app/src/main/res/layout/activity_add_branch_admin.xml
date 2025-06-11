@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.AddBranchAdminActivity">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:id="@+id/ivBack"
+        android:padding="0dp"
+        android:background="@drawable/bg_round_white"
+        android:cropToPadding="false"
+        android:src="@drawable/ic_back_arrow"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_12sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/lblToolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:fontFamily="@font/lexend_medium"
+        android:includeFontPadding="false"
+        android:text="@string/add_branch_admin"
+        android:textColor="@color/app_primary"
+        android:textSize="@dimen/_18ssp"
+        app:layout_constraintTop_toTopOf="@id/ivBack"
+        app:layout_constraintBottom_toBottomOf="@id/ivBack"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/ivProfile"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginTop="24dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_avatar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivBack"
+        app:riv_border_color="@color/app_primary"
+        app:riv_border_width="2dp"
+        app:riv_oval="true" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/ivEdit"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:background="@drawable/bg_round_blue"
+        android:src="@drawable/ic_edit"
+        app:tint="@color/white"
+        android:layout_marginEnd="@dimen/_minus5sdp"
+        app:layout_constraintBottom_toBottomOf="@id/ivProfile"
+        app:layout_constraintEnd_toEndOf="@id/ivProfile"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvValidationIvCustomer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:fontFamily="@font/lexend_medium"
+        android:includeFontPadding="false"
+        android:text="Add Customer Image"
+        android:textColor="@color/red"
+        android:textSize="@dimen/_10ssp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/ivProfile"
+        app:layout_constraintBottom_toTopOf="@id/tilName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/InputStyleLayout"
+        android:id="@+id/tilName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:prefixTextAppearance="@style/PrefixTextAppearance"
+        app:layout_constraintTop_toBottomOf="@id/tvValidationIvCustomer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:hint="@string/name"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lexend_regular"
+            android:inputType="textEmailAddress"
+            android:textSize="@dimen/_14ssp"
+            android:includeFontPadding="false"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/InputStyleLayout"
+        android:id="@+id/tilEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:prefixTextAppearance="@style/PrefixTextAppearance"
+        app:layout_constraintTop_toBottomOf="@id/tilName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:hint="@string/enter_email_id"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lexend_regular"
+            android:inputType="textEmailAddress"
+            android:textSize="@dimen/_14ssp"
+            android:includeFontPadding="false"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/InputStyleLayout"
+        android:id="@+id/tilPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:prefixTextAppearance="@style/PrefixTextAppearance"
+        app:layout_constraintTop_toBottomOf="@id/tilEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:hint="@string/mobile_no"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lexend_regular"
+            android:inputType="textEmailAddress"
+            android:textSize="@dimen/_14ssp"
+            android:includeFontPadding="false"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/InputStyleLayout"
+        android:id="@+id/tilBranch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:prefixTextAppearance="@style/PrefixTextAppearance"
+        app:layout_constraintTop_toBottomOf="@id/tilPhone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:hint="@string/branch"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edBranch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lexend_regular"
+            android:inputType="none"
+            android:focusable="false"
+            android:textSize="@dimen/_14ssp"
+            android:includeFontPadding="false"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        app:cornerRadius="8dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/lexend_medium"
+        android:includeFontPadding="false"
+        app:layout_constraintTop_toBottomOf="@id/tilBranch"
+        android:layout_marginHorizontal="@dimen/_12sdp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14ssp"
+        android:id="@+id/btnSubmit"
+        android:text="@string/btn_submit"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

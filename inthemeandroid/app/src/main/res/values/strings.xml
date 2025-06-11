@@ -1,0 +1,145 @@
+<resources>
+    <string name="app_name">Intheme</string>
+
+    <string name="btn_login">Login</string>
+    <string name="sign_in_into_your_account">Welcome back to Intheme!</string>
+
+    <!--Color Toast-->
+    <string name="text_warning">Warning</string>
+    <string name="text_success">Success</string>
+    <string name="text_error">Error</string>
+    <string name="text_info">Info</string>
+    <string name="text_no_internet">No internet connection</string>
+    <string name="text_mock_description">Lorem Ipsum is simply dummy text of the printing</string>
+
+    <!--Api Error-->
+    <string name="connection">Connection</string>
+    <string name="error">Error</string>
+    <string name="success">Success</string>
+    <string name="something_want_to_wrong">Something want to wrong</string>
+    <string name="pls_check_your_network_connection">Check your network connection</string>
+
+    <!--Validation Error-->
+    <string name="enter_full_name">Enter full name.</string>
+    <string name="enter_email_address">Enter email address.</string>
+    <string name="enter_valid_email_address">Enter valid email address.</string>
+    <string name="enter_mobile_no">Enter mobile no.</string>
+    <string name="select_branch">Select Branch</string>
+
+    <string name="select_language">Language</string>
+    <string name="btn_save">Save</string>
+    <string name="english">English</string>
+
+
+    <string name="enter_email_id">Email Id</string>
+    <string name="validation_email_id">Enter Email Id</string>
+    <string name="validation_valid_email_id">Enter Valid Email Id</string>
+
+    <string name="verification_account">Verification Account</string>
+    <string name="code_verify">Please enter the verification code sent to \nyour email address</string>
+    <string name="otp_hint">*</string>
+    <string name="enter_valid_otp">Enter Valid OTP</string>
+    <string name="already_have_an_account">Already have an account? Login</string>
+    <string name="lbl_resend_code_in">Resend code in</string>
+    <string name="lbl_didnt_get_code_resend_code">Didn\'t receive a code ? Resend Code</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="branch_admin">Branch Admin</string>
+    <string name="branches">Branches</string>
+
+    <string-array name="language">
+        <item>Hindi</item>
+        <item>English</item>
+        <item>Gujarati</item>
+    </string-array>
+
+    <string name="branch_list">Branch List</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="btn_update">Update</string>
+    <string name="btn_logout">Logout</string>
+
+    <string name="mobile_no">Mobile No</string>
+
+    <string name="branch">Branch</string>
+
+
+    <string name="set_image_form_gallery">Set Image form Gallery</string>
+    <string name="set_image_form_camera">Set Image form Camera</string>
+
+    <string name="needed_information">Needed information</string>
+    <string name="needed_information_message">Your information is verified.so you do not update your details. If you want to update details so, contact on customer support number.</string>
+    <string name="okay">Okay</string>
+
+
+    <string name="permission_required">Permission Required</string>
+    <string name="permission_notification_message">Notification permission is required to show notification.</string>
+    <string name="permission_camera_storage_message">Camera and External Storage permissions are required for the app to function properly.</string>
+    <string name="permission_storage_message">External Storage permissions are required for the app to function properly.</string>
+    <string name="btn_grant">Grant</string>
+    <string name="btn_cancel">Cancel</string>
+
+    <string name="exit_screen">Sure if you wan\'t to exits this app</string>
+
+    <string name="btn_yes">Yes</string>
+    <string name="btn_no">No</string>
+
+    <string name="btn_submit">Submit</string>
+
+    <string name="sure_logout">Are you sure want to logout</string>
+    <string name="no_data_found">No data found</string>
+
+    <string name="delete_branch">Delete Branch</string>
+    <string name="delete_branch_detail">Are you sure want delete branch</string>
+    <string name="add_branch_admin">Add Branch Admin</string>
+
+    <string name="delete_branch_admin">Delete Branch Admin</string>
+    <string name="delete_branch_admin_detail">Are you sure want delete branch admin</string>
+
+    <string name="name">Name</string>
+    <string name="service_man">Service Man</string>
+    <string name="customer">Customer</string>
+    <string name="equipment">Equipments</string>
+    <string name="reports">Reports</string>
+    <string name="update_branch_admin">Update Branch Admin</string>
+    <string name="title_service_man">Service Man</string>
+
+    <string name="delete_service_man">Delete Service man</string>
+    <string name="delete_service_man_detail">Are you sure want delete Service man</string>
+
+    <string name="customer_list">Customer List</string>
+    <string name="add_customer">Add Customer</string>
+    <string name="update_customer">Update Customer</string>
+    <string name="personal_details">Personal Details</string>
+    <string name="gstn_no">GSTN No</string>
+    <string name="manager_details">Manager Details</string>
+    <string name="manager_name">Manager Name</string>
+    <string name="manager_email">Manager Email</string>
+    <string name="manager_mobile">Manager Mobile</string>
+    <string name="operator_details">Operator Details</string>
+    <string name="operator_name">Operator Name</string>
+    <string name="operator_email">Operator Email</string>
+
+    <string name="address_detail">Address Detail</string>
+    <string name="address_line_1">Address Line 1</string>
+    <string name="address_line_2">Address Line 2</string>
+    <string name="address_line_3">Address Line 3</string>
+    <string name="pin_code">Pin Code</string>
+    <string name="customer_details">Customer Details</string>
+
+    <string name="customer_name">Name</string>
+    <string name="customer_mobile_no">Mobile No</string>
+    <string name="customer_email">Email</string>
+
+    <string name="branch_details">Branch Details</string>
+    <string name="branch_name">Branch Name</string>
+    <string name="branch_location">Branch Location</string>
+
+
+    <string name="created_by">Created By</string>
+    <string name="created_by_name">Created By Name</string>
+    <string name="created_by_email">Created By Email</string>
+
+    <string name="equipment_name">Equipment Name</string>
+    <string name="customer_user_name">Customer Name</string>
+
+
+</resources>

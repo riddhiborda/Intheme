@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginHorizontal="@dimen/_7sdp"
+    android:layout_marginTop="@dimen/_5sdp"
+    app:cardCornerRadius="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/ivEquipment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_75sdp"
+            android:layout_marginHorizontal="@dimen/_7sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:paddingVertical="@dimen/_15sdp"
+            android:background="@drawable/bg_gray_10"
+            android:src="@drawable/ic_app_icon"
+            app:riv_corner_radius_top_left="@dimen/_7sdp"
+            app:riv_corner_radius_top_right="@dimen/_7sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ivEdit"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:background="@drawable/bg_round_blue"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_edit"
+            app:layout_constraintEnd_toStartOf="@id/ivDelete"
+            app:layout_constraintTop_toTopOf="@+id/ivView"
+            app:tint="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ivDelete"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:background="@drawable/bg_round_red"
+            android:cropToPadding="false"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_delete"
+            app:layout_constraintEnd_toStartOf="@id/ivView"
+            app:layout_constraintTop_toTopOf="@+id/ivView"
+            app:tint="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ivView"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:background="@drawable/bg_round_blue"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_eye"
+            app:layout_constraintEnd_toEndOf="@+id/ivEquipment"
+            app:layout_constraintTop_toTopOf="@+id/ivEquipment"
+            app:tint="@color/white" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/lbOperatorName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_7sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/lexend_regular"
+            android:includeFontPadding="false"
+            android:text="@string/equipment_name"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivEquipment" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvOperatorName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginEnd="@dimen/_7sdp"
+            android:fontFamily="@font/lexend_regular"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:ellipsize="end"
+            tools:text="75 HP PM+VFD SCREW AIR COMPRESSOR (COMPRESSOR – 1)"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/lbOperatorName"
+            app:layout_constraintTop_toBottomOf="@id/lbOperatorName" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/lbOperatorEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_7sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/lexend_regular"
+            android:includeFontPadding="false"
+            android:text="@string/customer_user_name"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvOperatorName" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvCustomerName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:fontFamily="@font/lexend_regular"
+            android:includeFontPadding="false"
+            tools:text="Deep"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/tvOperatorName"
+            app:layout_constraintStart_toStartOf="@id/lbOperatorEmail"
+            app:layout_constraintTop_toBottomOf="@id/lbOperatorEmail" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

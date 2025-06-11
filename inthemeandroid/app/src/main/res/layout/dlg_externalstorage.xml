@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_65sdp"
+        android:id="@+id/viewCard"
+        android:layout_marginHorizontal="@dimen/_30sdp"
+        android:background="@drawable/bg_white_10"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+    <TextView
+        android:id="@+id/tvSetImageGallery"
+        android:fontFamily="@font/lexend_medium"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="@string/set_image_form_gallery"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintTop_toTopOf="@id/viewCard"
+        app:layout_constraintStart_toStartOf="@id/viewCard"
+        app:layout_constraintEnd_toEndOf="@id/viewCard"
+        app:layout_constraintBottom_toTopOf="@id/icLine"
+        app:layout_constraintVertical_weight="1"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_1sdp"
+        android:id="@+id/icLine"
+        android:src="@drawable/ic_line"
+        app:layout_constraintBottom_toTopOf="@id/tvSetImageCamera"
+        app:layout_constraintTop_toBottomOf="@id/tvSetImageGallery"
+        app:layout_constraintStart_toStartOf="@id/viewCard"
+        app:layout_constraintEnd_toEndOf="@id/viewCard"/>
+
+    <TextView
+        android:id="@+id/tvSetImageCamera"
+        android:fontFamily="@font/lexend_medium"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:gravity="center"
+        android:text="@string/set_image_form_camera"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintTop_toBottomOf="@id/icLine"
+        app:layout_constraintStart_toStartOf="@id/viewCard"
+        app:layout_constraintEnd_toEndOf="@id/viewCard"
+        app:layout_constraintBottom_toBottomOf="@id/viewCard"
+        app:layout_constraintVertical_weight="1"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

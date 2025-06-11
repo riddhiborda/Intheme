@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.OTPVerificationActivity">
+    <View
+        android:id="@+id/ivAppIcon"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_160sdp"
+        android:background="@drawable/bg_gradient_top"
+        android:padding="@dimen/_35sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:src="@drawable/ic_app_icon"
+        android:tint="@color/white"
+        app:layout_constraintTop_toTopOf="@id/ivAppIcon"
+        app:layout_constraintStart_toStartOf="@id/ivAppIcon"
+        app:layout_constraintEnd_toEndOf="@id/ivAppIcon"
+        app:layout_constraintBottom_toBottomOf="@id/ivAppIcon"
+        tools:ignore="UseAppTint"/>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:id="@+id/ivBack"
+        android:padding="0dp"
+        android:background="@drawable/bg_round_white"
+        android:cropToPadding="false"
+        android:src="@drawable/ic_back_arrow"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_12sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/lblLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="@font/lexend_medium"
+        android:text="@string/verification_account"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_18ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivAppIcon" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/lblLoginText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:fontFamily="@font/lexend_regular"
+        android:text="@string/code_verify"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lblLogin" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/InputStyleLayout"
+        android:id="@+id/otp1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/lblLoginText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/otp2"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:hintEnabled="false"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edOtp1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/lexend_regular"
+            android:inputType="number"
+            android:gravity="center"
+            android:textSize="@dimen/_10ssp"
+            android:maxLength="1"
+            android:hint="@string/otp_hint"
+            android:includeFontPadding="false"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/InputStyleLayout"
+        android:id="@+id/otp2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/otp1"
+        app:layout_constraintEnd_toStartOf="@id/otp3"
+        app:layout_constraintTop_toTopOf="@id/otp1"
+        app:layout_constraintBottom_toBottomOf="@id/otp1"
+        android:layout_marginStart="@dimen/_2sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        app:hintEnabled="false"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edOtp2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/lexend_regular"
+            android:inputType="number"
+            android:gravity="center"
+            android:textSize="@dimen/_10ssp"
+            android:maxLength="1"
+            android:hint="@string/otp_hint"
+            android:includeFontPadding="false"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/InputStyleLayout"
+        android:id="@+id/otp3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/otp2"
+        app:layout_constraintEnd_toStartOf="@id/otp4"
+        app:layout_constraintTop_toTopOf="@id/otp1"
+        app:layout_constraintBottom_toBottomOf="@id/otp1"
+        android:layout_marginStart="@dimen/_2sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        app:hintEnabled="false"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edOtp3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/lexend_regular"
+            android:inputType="number"
+            android:gravity="center"
+            android:textSize="@dimen/_10ssp"
+            android:maxLength="1"
+            android:hint="@string/otp_hint"
+            android:includeFontPadding="false"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/InputStyleLayout"
+        android:id="@+id/otp4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/otp3"
+        app:layout_constraintEnd_toStartOf="@id/otp5"
+        app:layout_constraintTop_toTopOf="@id/otp1"
+        app:layout_constraintBottom_toBottomOf="@id/otp1"
+        android:layout_marginStart="@dimen/_2sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        app:hintEnabled="false"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edOtp4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/lexend_regular"
+            android:inputType="number"
+            android:gravity="center"
+            android:textSize="@dimen/_10ssp"
+            android:maxLength="1"
+            android:hint="@string/otp_hint"
+            android:includeFontPadding="false"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/InputStyleLayout"
+        android:id="@+id/otp5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/otp4"
+        app:layout_constraintEnd_toStartOf="@id/otp6"
+        app:layout_constraintTop_toTopOf="@id/otp1"
+        app:layout_constraintBottom_toBottomOf="@id/otp1"
+        android:layout_marginStart="@dimen/_2sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        app:hintEnabled="false"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edOtp5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/lexend_regular"
+            android:inputType="number"
+            android:gravity="center"
+            android:textSize="@dimen/_10ssp"
+            android:maxLength="1"
+            android:hint="@string/otp_hint"
+            android:includeFontPadding="false"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/InputStyleLayout"
+        android:id="@+id/otp6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/otp5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/otp1"
+        app:layout_constraintBottom_toBottomOf="@id/otp1"
+        android:layout_marginStart="@dimen/_2sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        app:hintEnabled="false"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edOtp6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/lexend_regular"
+            android:inputType="number"
+            android:gravity="center"
+            android:textSize="@dimen/_10ssp"
+            android:maxLength="1"
+            android:hint="@string/otp_hint"
+            android:includeFontPadding="false"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/tvValidationOTp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:letterSpacing="0.03"
+        android:textColor="@color/red"
+        android:fontFamily="@font/lexend_regular"
+        android:textSize="@dimen/validation_size"
+        android:text="@string/enter_valid_otp"
+        app:layout_constraintStart_toStartOf="@id/otp1"
+        app:layout_constraintTop_toBottomOf="@id/otp1"
+        android:visibility="gone" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnVerify"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:cornerRadius="8dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:gravity="center"
+        android:text="Verify"
+        android:fontFamily="@font/lexend_semibold"
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_size"
+        app:layout_constraintCircleRadius="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@id/tvValidationOTp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <ProgressBar
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_centerInParent="true"
+        android:id="@+id/pbLogin"
+        android:indeterminate="true"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@id/btnVerify"
+        app:layout_constraintEnd_toEndOf="@id/btnVerify"
+        app:layout_constraintTop_toTopOf="@id/btnVerify"
+        app:layout_constraintBottom_toBottomOf="@id/btnVerify"
+        android:indeterminateTint="@color/white"
+        app:trackThickness="1dp" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvOTPReceive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/lexend_regular"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="@string/already_have_an_account"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp"
+        android:paddingVertical="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@id/btnVerify"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="app_primary">#117DC6</color>
+
+    <!--    Background Colors-->
+    <color name="warning_color">#FBC02D</color>
+    <color name="error_color">#D50000</color>
+    <color name="success_color">#17B978</color>
+    <color name="info_color">#0340DA</color>
+    <color name="delete_color">#0288D1</color>
+
+
+    <!--    Custom Colors-->
+    <color name="custom_warning_color">#FF9800</color>
+    <color name="custom_error_color">#F44336</color>
+    <color name="custom_success_color">#8BC34A</color>
+    <color name="custom_info_color">#2196F3</color>
+    <color name="custom_delete_color">#673AB7</color>
+    <color name="custom_dark_toast">#121212</color>
+
+    <color name="color_navigation_unselected">#A4A4A4</color>
+
+    <color name="gray_bg">#F4F0F0</color>
+
+    <color name="red">#F40606</color>
+
+</resources>

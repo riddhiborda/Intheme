@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:id="@+id/btnBack"
+        android:padding="0dp"
+        android:background="@drawable/bg_round_white"
+        android:cropToPadding="false"
+        android:src="@drawable/ic_back_arrow"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_12sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTitleCustomerDetails"
+        android:visibility="visible"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15ssp"
+        android:paddingVertical="@dimen/_2sdp"
+        app:layout_constraintStart_toEndOf="@id/btnBack"
+        app:layout_constraintEnd_toStartOf="@id/ivEdit"
+        app:layout_constraintTop_toTopOf="@id/btnBack"
+        app:layout_constraintBottom_toBottomOf="@id/btnBack"
+        android:paddingStart="@dimen/_10sdp"
+        android:text="@string/customer_details"
+        android:fontFamily="@font/lexend_regular"/>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/ivEdit"
+        android:layout_width="@dimen/_32sdp"
+        android:layout_height="@dimen/_32sdp"
+        android:background="@drawable/bg_round_blue"
+        android:src="@drawable/ic_edit"
+        app:tint="@color/white"
+        android:layout_marginEnd="@dimen/_5sdp"
+        app:layout_constraintTop_toTopOf="@id/btnBack"
+        app:layout_constraintBottom_toBottomOf="@id/btnBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingTop="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnBack">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/lblPersonalDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+
+                android:fontFamily="@font/lexend_regular"
+                android:includeFontPadding="false"
+                android:text="@string/personal_details"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/lblName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/lexend_regular"
+                android:includeFontPadding="false"
+                android:text="@string/customer_name"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lblPersonalDetail" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/lexend_regular"
+                android:includeFontPadding="false"
+                android:text="Dip Bhut"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/lblName"
+                app:layout_constraintTop_toBottomOf="@id/lblName" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/lblMobileNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/lexend_regular"
+                android:includeFontPadding="false"
+                android:text="@string/customer_mobile_no"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvName" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvMobileNo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/lexend_regular"
+                android:includeFontPadding="false"
+                android:text="+91 9978493089"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/lblMobileNo"
+                app:layout_constraintTop_toBottomOf="@id/lblMobileNo" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/lblEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/lexend_regular"
+                android:includeFontPadding="false"
+                android:text="@string/customer_email"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvMobileNo" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/lexend_regular"
+                android:includeFontPadding="false"
+                android:text="test@abc.com"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/lblEmail"
+                app:layout_constraintTop_toBottomOf="@id/lblEmail" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/lblAddressLine1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/lexend_regular"
+                android:includeFontPadding="false"
+                android:text="@string/address_line_1"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvEmail" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvAddressLine1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/lexend_regular"
+                android:includeFontPadding="false"
+                android:text="test@abc.com"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/lblAddressLine1"
+                app:layout_constraintTop_toBottomOf="@id/lblAddressLine1" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/lblAddressLine2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/lexend_regular"
+                android:includeFontPadding="false"
+                android:text="@string/address_line_2"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvAddressLine1" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvAddressLine2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/lexend_regular"
+                android:includeFontPadding="false"
+                android:text="test@abc.com"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/lblAddressLine2"
+                app:layout_constraintTop_toBottomOf="@id/lblAddressLine2" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/lblAddressLine3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/lexend_regular"
+                android:includeFontPadding="false"
+                android:text="@string/address_line_3"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvAddressLine2" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvAddressLine3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/lexend_regular"
+                android:includeFontPadding="false"
+                android:text="test@abc.com"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/lblAddressLine3"
+                app:layout_constraintTop_toBottomOf="@id/lblAddressLine3" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/lblPinCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/lexend_regular"
+                android:includeFontPadding="false"
+                android:text="@string/pin_code"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvAddressLine3" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvPinCode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/lexend_regular"
+                android:includeFontPadding="false"
+                android:text="test@abc.com"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/lblPinCode"
+                app:layout_constraintTop_toBottomOf="@id/lblPinCode" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/lblBranch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="@font/lexend_regular"
+                android:includeFontPadding="false"
+                android:text="@string/branch_details"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvPinCode" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/lbBranchName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/lexend_regular"
+                android:includeFontPadding="false"
+                android:text="@string/branch_name"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lblBranch" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvBranchName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/lexend_regular"
+                android:includeFontPadding="false"
+                android:text="Dip Bhut"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/lbBranchName"
+                app:layout_constraintTop_toBottomOf="@id/lbBranchName" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/lbBranchLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/lexend_regular"
+                android:includeFontPadding="false"
+                android:text="@string/branch_location"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvBranchName" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvBranchLocation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/lexend_regular"
+                android:includeFontPadding="false"
+                android:text="Surat"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/lbBranchLocation"
+                app:layout_constraintTop_toBottomOf="@id/lbBranchLocation" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/lblManagerDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:fontFamily="@font/lexend_regular"
+                android:includeFontPadding="false"
+                android:text="@string/manager_details"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvBranchLocation" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/lbManagerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/lexend_regular"
+                android:includeFontPadding="false"
+                android:text="@string/manager_name"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lblManagerDetail" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvManagerName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/lexend_regular"
+                android:includeFontPadding="false"
+                android:text="Dip Bhut"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/lbManagerName"
+                app:layout_constraintTop_toBottomOf="@id/lbManagerName" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/lbManagerEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/lexend_regular"
+                android:includeFontPadding="false"
+                android:text="@string/manager_email"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvManagerName" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvManagerEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/lexend_regular"
+                android:includeFontPadding="false"
+                android:text="test@yopmail.com"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/lbManagerEmail"
+                app:layout_constraintTop_toBottomOf="@id/lbManagerEmail" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/lbManagerMobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/lexend_regular"
+                android:includeFontPadding="false"
+                android:text="@string/manager_mobile"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvManagerEmail" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvManagerMobile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/lexend_regular"
+                android:includeFontPadding="false"
+                android:text="test@yopmail.com"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/lbManagerMobile"
+                app:layout_constraintTop_toBottomOf="@id/lbManagerMobile" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/lblOperatorDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="@font/lexend_regular"
+                android:includeFontPadding="false"
+                android:text="@string/operator_details"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvManagerMobile" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/lbOperatorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/lexend_regular"
+                android:includeFontPadding="false"
+                android:text="@string/operator_name"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lblOperatorDetail" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvOperatorName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/lexend_regular"
+                android:includeFontPadding="false"
+                android:text="Dip Bhut"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/lbOperatorName"
+                app:layout_constraintTop_toBottomOf="@id/lbOperatorName" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/lbOperatorEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/lexend_regular"
+                android:includeFontPadding="false"
+                android:text="@string/operator_email"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvOperatorName" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvOperatorEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/lexend_regular"
+                android:includeFontPadding="false"
+                android:text="Dip Bhut"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/lbOperatorEmail"
+                app:layout_constraintTop_toBottomOf="@id/lbOperatorEmail" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/lblCreatedBy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="@font/lexend_regular"
+                android:includeFontPadding="false"
+                android:text="@string/created_by"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvOperatorEmail" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/lblCreatedByName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/lexend_regular"
+                android:includeFontPadding="false"
+                android:text="@string/created_by_name"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lblCreatedBy" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvCreatedByName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/lexend_regular"
+                android:includeFontPadding="false"
+                android:text="Dip Bhut"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/lblCreatedByName"
+                app:layout_constraintTop_toBottomOf="@id/lblCreatedByName" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/lbCreatedByEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/lexend_regular"
+                android:includeFontPadding="false"
+                android:text="@string/created_by_email"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvCreatedByName" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvCreatedByEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/lexend_regular"
+                android:includeFontPadding="false"
+                android:text="Dip Bhut"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/lbCreatedByEmail"
+                app:layout_constraintTop_toBottomOf="@id/lbCreatedByEmail" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

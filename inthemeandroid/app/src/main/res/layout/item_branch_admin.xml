@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="@dimen/_5sdp"
+    app:cardCornerRadius="@dimen/_5sdp"
+    app:cardBackgroundColor="@color/white"
+    android:layout_marginHorizontal="@dimen/_10sdp"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingVertical="@dimen/_10sdp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:id="@+id/ivUser"
+            android:visibility="visible"
+            android:scaleType="centerCrop"
+            android:elevation="5dp"
+            android:src="@drawable/ic_avatar"
+            android:layout_marginStart="@dimen/_8sdp"
+            app:riv_border_color="@color/app_primary"
+            app:riv_oval="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lexend_regular"
+            android:includeFontPadding="false"
+            android:text="name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15ssp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            app:layout_constraintStart_toEndOf="@id/ivUser"
+            app:layout_constraintEnd_toStartOf="@id/ivEdit"
+            app:layout_constraintTop_toTopOf="@id/ivUser"
+            app:layout_constraintBottom_toBottomOf="@id/ivUser"/>
+
+        <ImageView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:src="@drawable/ic_phone"
+            android:id="@+id/ivMobile"
+            android:rotation="90"
+            android:layout_marginStart="@dimen/_8sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tvMobileNo"
+            app:layout_constraintBottom_toBottomOf="@id/tvMobileNo"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvMobileNo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:fontFamily="@font/lexend_regular"
+            android:includeFontPadding="false"
+            android:text="Mobile"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            app:layout_constraintTop_toBottomOf="@id/ivUser"
+            app:layout_constraintStart_toEndOf="@id/ivMobile"
+            app:layout_constraintEnd_toStartOf="@id/ivEdit"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:src="@drawable/ic_envelope"
+            android:id="@+id/ivEmail"
+            android:layout_marginStart="@dimen/_8sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tvEmail"
+            app:layout_constraintBottom_toBottomOf="@id/tvEmail"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:fontFamily="@font/lexend_regular"
+            android:includeFontPadding="false"
+            android:text="Email"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            app:layout_constraintTop_toBottomOf="@id/tvMobileNo"
+            app:layout_constraintStart_toEndOf="@id/ivMobile"
+            app:layout_constraintEnd_toStartOf="@id/ivEdit"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:src="@drawable/ic_branch"
+            android:id="@+id/ivBranch"
+            android:layout_marginStart="@dimen/_8sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tvBranch"
+            app:layout_constraintBottom_toBottomOf="@id/tvBranch"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvBranch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:fontFamily="@font/lexend_regular"
+            android:includeFontPadding="false"
+            android:text="Branch"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            app:layout_constraintTop_toBottomOf="@id/tvEmail"
+            app:layout_constraintStart_toEndOf="@id/ivBranch"
+            app:layout_constraintEnd_toStartOf="@id/ivEdit"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ivEdit"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:background="@drawable/bg_round_blue"
+            android:src="@drawable/ic_edit"
+            app:tint="@color/white"
+            android:layout_marginEnd="@dimen/_5sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvName"
+            app:layout_constraintEnd_toStartOf="@id/ivDelete"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ivDelete"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:background="@drawable/bg_round_red"
+            android:cropToPadding="false"
+            app:tint="@color/white"
+            android:src="@drawable/ic_delete"
+            android:layout_marginEnd="@dimen/_12sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/swAction"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:checked="true"
+            android:thumbTint="@color/app_primary"
+            android:trackTint="@color/app_primary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/ivEdit"
+            app:layout_constraintEnd_toEndOf="@id/ivDelete"
+            app:layout_constraintTop_toBottomOf="@id/ivEdit"
+            app:useMaterialThemeColors="false"
+            tools:ignore="UseSwitchCompatOrMaterialXml"
+            tools:targetApi="m" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

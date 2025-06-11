@@ -1,0 +1,40 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.BaseSetup" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/app_primary</item>
+        <item name="colorPrimary">@color/app_primary</item>
+    </style>
+
+    <style name="Theme.BaseSetup" parent="Base.Theme.BaseSetup" />
+
+    <style name="PrefixTextAppearance" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:textColor">@color/info_color</item>
+        <item name="android:fontFamily">@font/lexend_regular</item>
+    </style>
+
+    <style name="InputStyleLayout" parent="ThemeOverlay.Material3.TextInputEditText.OutlinedBox">
+        <item name="boxStrokeColor">@color/app_primary</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="boxCornerRadiusTopStart">8dp</item>
+        <item name="boxCornerRadiusTopEnd">8dp</item>
+        <item name="boxCornerRadiusBottomStart">8dp</item>
+        <item name="boxCornerRadiusBottomEnd">8dp</item>
+        <item name="hintTextColor">@color/app_primary</item>
+        <item name="errorTextAppearance">@style/ErrorTextAppearance</item>
+        <item name="android:fontFamily">@font/lexend_light</item>
+    </style>
+
+    <style name="ErrorTextAppearance" parent="MaterialAlertDialog.Material3.Body.Text">
+        <item name="android:textSize">@dimen/_10ssp</item>
+        <item name="android:fontFamily">@font/lexend_regular</item>
+    </style>
+
+    <style name="AppCompatAlertDialogStyleBig" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowMinWidthMajor">95%</item>
+        <item name="android:windowMinWidthMinor">95%</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:backgroundDimAmount">0.8</item>
+    </style>
+</resources>

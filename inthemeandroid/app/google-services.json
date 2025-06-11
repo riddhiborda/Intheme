@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "786688386359",
+    "project_id": "inthemtestapp",
+    "storage_bucket": "inthemtestapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:786688386359:android:c520755d1872d35d4a26b2",
+        "android_client_info": {
+          "package_name": "com.intheme.dev"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6GLJBKyMEzbf3Bf6d6EgYc33oSeassNk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

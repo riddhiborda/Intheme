@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="otp_view_item_size">48dp</dimen>
+    <dimen name="otp_view_item_radius">5dp</dimen>
+    <dimen name="otp_view_item_spacing">5dp</dimen>
+    <dimen name="otp_view_item_line_width">2dp</dimen>
+    <dimen name="otp_view_cursor_width">2dp</dimen>
+
+    <dimen name="active_icon_size">48dp</dimen>
+    <dimen name="inactive_icon_size">24dp</dimen>
+    <dimen name="dimen_0">0dp</dimen>
+    <dimen name="dimen_4">4dp</dimen>
+    <dimen name="dimen_8">8dp</dimen>
+    <dimen name="dimen_12">12dp</dimen>
+    <dimen name="dimen_16">16dp</dimen>
+    <dimen name="dimen_24">24dp</dimen>
+    <dimen name="dimen_32">32dp</dimen>
+    <dimen name="dimen_48">48dp</dimen>
+    <dimen name="dimen_64">64dp</dimen>
+    <dimen name="dimen_72">72dp</dimen>
+
+    <dimen name="title_font_size">@dimen/_14ssp</dimen>
+    <dimen name="subtitle_font_size">@dimen/_12ssp</dimen>
+    <dimen name="button_size">@dimen/_12ssp</dimen>
+    <dimen name="validation_size">@dimen/_10ssp</dimen>
+    <dimen name="button_small_size">@dimen/_10ssp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

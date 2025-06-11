@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/root"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/tvCityList"
+       android:textColor="@color/black"
+       android:visibility="visible"
+       android:textSize="@dimen/_15ssp"
+       android:paddingVertical="@dimen/_2sdp"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       android:paddingStart="@dimen/_10sdp"
+       android:fontFamily="@font/lexend_medium"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvStateList"
+        android:visibility="visible"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp"
+        android:paddingVertical="@dimen/_2sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCityList"
+        android:paddingStart="@dimen/_10sdp"
+        android:fontFamily="@font/lexend_regular"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/viewLineGray"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/tvStateList"
+        android:background="@color/color_navigation_unselected"
+     />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
